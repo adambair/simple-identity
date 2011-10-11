@@ -1,0 +1,10 @@
+<h2>Profile for <%= @user.email %></h2>
+
+<h3>Authorizations:</h3>
+<ul>
+  <% @user.authorizations.each do |auth| %>
+    <li><%= auth.provider %></li>
+  <% end %>
+</ul>
+
+<p>The code allows you to easily add additional providers.</p>

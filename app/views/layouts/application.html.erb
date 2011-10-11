@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SimpleIdentity</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id="flash">
+    <% if flash[:alert] || flash[:notice] %>
+      <div class="container">
+        <% if flash[:notice] %>
+          <div class="notice">
+            <p><%= flash[:notice] %></p>
+          </div>
+        <% end %>
+
+        <% if flash[:alert] %>
+          <div class="alert">
+            <p><%= flash[:alert] %></p>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+
+  <header>
+    <div class="container">
+      <nav id="profile">
+        <% if logged_in? %>
+          <%= link_to current_user.email, user_path(current_user) %> | 
+          <%= link_to "sign-out", logout_path %> 
+        <% else %>
+          <%= link_to "sign-up", signup_path %> | 
+          <%= link_to "login", login_path %> 
+        <% end %>
+      </nav>
+
+      <h1><%= link_to "Simple Identity", logged_in? ? dashboard_path : root_path %></h1>
+
+      <nav id="main">
+        <% if logged_in? -%>
+          <%= link_to "Dashboard", dashboard_path %>
+        <% end -%>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <%= yield %>
+  </div>
+
+  <footer>
+    <em>Simple Identity is an example application showing off Omniauth's new oa-identity feature</em>
+  </footer>
+
+</body>
+</html>
