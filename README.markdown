@@ -26,6 +26,8 @@ This application has been setup to easily accept new providers (twitter/facebook
 
 Please note that `oa-identity` is currently in beta and is only available in the Omniauth `1.0-beta` branch.
 
+  * https://github.com/adambair/omniauth/tree/1.0-beta
+
 ## Contributors
 
 Created by Adam Bair (adam@intridea.com) of Intridea (www.intridea.com)
