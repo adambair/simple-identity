@@ -2,6 +2,8 @@
 
 This application is an example of how to implement Omniauth's new `oa-identity` (local username/password) provider. 
 
+Please see: https://github.com/adambair/omniauth/tree/1.0-beta/oa-identity
+
 ## Setup / Installation
 
 Setup is fairly straightforward:
@@ -16,6 +18,9 @@ Then browse to http://localhost:3000
 ## Additional Providers 
 
 This application has been setup to easily accept new providers (twitter/facebook/etc). 
+
+https://github.com/intridea/omniauth
+https://github.com/intridea/omniauth/wiki
 
 ## Notes
 
