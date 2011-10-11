@@ -11,6 +11,7 @@ Setup is fairly straightforward:
     git clone git://github.com/adambair/simple-identity.git
     cd simple-identity
     bundle install
+    rake db:migrate
     rails server
 
 Then browse to http://localhost:3000
