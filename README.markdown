@@ -2,7 +2,7 @@
 
 This application is an example of how to implement Omniauth's new `oa-identity` (local username/password) provider. 
 
-  * https://github.com/adambair/omniauth/tree/1.0-beta/oa-identity
+  * https://github.com/intridea/omniauth/tree/1.0-beta/oa-identity
 
 ## Setup / Installation
 
@@ -27,7 +27,7 @@ This application has been setup to easily accept new providers (twitter/facebook
 
 Please note that `oa-identity` is currently in beta and is only available in the Omniauth `1.0-beta` branch.
 
-  * https://github.com/adambair/omniauth/tree/1.0-beta
+  * https://github.com/intridea/omniauth/tree/1.0-beta
 
 ## Contributors
 
